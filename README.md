@@ -214,13 +214,15 @@ Penjelasan :
 
 ---
 
-3️⃣ Kolom Skills (Dengan Vue)
+3️⃣ Kolom Skills 
 
-<img width="693" height="392" alt="Screenshot 2026-02-28 232328" src="https://github.com/user-attachments/assets/fed2e798-1a1e-4f99-bc65-b7aaecbe83d6" />
+
+<img width="793" height="670" alt="image" src="https://github.com/user-attachments/assets/99632188-31a7-4626-b21c-2bc6f733ec0a" />
+
 
 Penjelasan:
 
-* Ini kolom kedua, masih pakai col-md-4 mb-4 supaya sejajar dengan kolom lain. Bagian ini menampilkan daftar skill menggunakan v-for="skill in skills", artinya data diambil dari Vue dan ditampilkan secara otomatis berdasarkan isi array skills. Jadi kalau saya tambah data skill, tampilannya ikut bertambah tanpa ubah HTML. Progress bar dibuat dengan skill-bar dan skill-fill. Lebarnya diatur pakai :style="{ width: skill.percent + '%' }" supaya menyesuaikan nilai persen dari data. Angka persen juga ditampilkan di dalam <span>.
+* Pada bagian ini saya membuat tampilan daftar skill menggunakan struktur HTML yang dibungkus dalam class about-card agar tampil dalam bentuk card yang rapi dan konsisten dengan bagian lainnya. Setiap skill saya kelompokkan dalam skill-item, dimana di dalamnya terdapat nama skill yang ditampilkan menggunakan class skill-name, serta progress bar yang dibuat menggunakan skill-bar sebagai wadah dan skill-fill sebagai isi bar. Untuk menunjukkan tingkat kemampuan, saya mengatur lebar progress bar menggunakan atribut style="width: xx%", misalnya 85% atau 90%, sehingga panjang bar akan menyesuaikan nilai tersebut. Selain itu, saya juga menampilkan angka persentase di dalam elemen <span> agar pengguna bisa melihat nilai skill secara jelas. Dengan cara ini, tampilan skill menjadi lebih visual, mudah dipahami, dan tetap menarik meskipun hanya menggunakan HTML dan CSS tanpa bantuan JavaScript atau Vue.
 
 ---
 
