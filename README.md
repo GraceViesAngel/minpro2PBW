@@ -463,37 +463,48 @@ Penjelasan :
 
 ---
 
-### 🏷️ Vue JS
+### 🏷️ PHP & MySQL (phpMyAdmin)
 
-Vue JS saya gunakan untuk menampilkan data yang lebih dinamis, terutama pada bagian Skills dan Certificates. Vue saya gunakan untuk mengelola data seperti daftar skill dan sertifikat. Dengan `v-for`, saya bisa menampilkan data secara otomatis berdasarkan array yang sudah saya buat di dalam `createApp()`. Jika saya menambahkan data baru di dalam array, tampilannya akan langsung ikut bertambah tanpa perlu menulis ulang HTML secara manual. Walaupun menggunakan Vue, website ini tetap bersifat statis karena data tidak diambil dari database atau API eksternal.
+Pada website ini saya menggunakan PHP dan MySQL untuk membuat data menjadi dinamis, terutama pada bagian certificates. Data tidak lagi ditulis langsung di dalam HTML, tetapi disimpan di dalam database MySQL yang saya kelola melalui phpMyAdmin. Kemudian, data tersebut saya ambil menggunakan PHP dan ditampilkan ke dalam halaman website, sehingga jika ada perubahan data di database, tampilannya juga akan otomatis ikut berubah tanpa perlu mengubah kode HTML.
 
 ---
 
-#### CDN Vue
+#### Koneksi Database
 
-<img width="657" height="70" alt="image" src="https://github.com/user-attachments/assets/9ee85b46-1217-451f-a205-332b56e0822f" />
+<img width="488" height="83" alt="image" src="https://github.com/user-attachments/assets/e75549cc-9b9c-4d52-94f4-8c1de42d96e0" />
 
 Penjelasan :
 
-* Vue dihubungkan melalui CDN agar bisa langsung digunakan dalam file HTML.
+* Pada bagian ini saya menghubungkan website dengan database menggunakan file koneksi.php. File ini berisi konfigurasi seperti nama host, username, password, dan nama database. Dengan adanya koneksi ini, website bisa mengambil data dari database menggunakan PHP.Pada bagian ini saya menghubungkan website dengan database menggunakan file koneksi.php. File ini berisi konfigurasi seperti nama host, username, password, dan nama database. Dengan adanya koneksi ini, website bisa mengambil data dari database menggunakan PHP.
 
 ---
 
-#### createApp()
+#### Query Data
 
-<img width="744" height="799" alt="image" src="https://github.com/user-attachments/assets/65d78db0-005b-48bf-bc34-107d682c49db" />
+<img width="593" height="31" alt="image" src="https://github.com/user-attachments/assets/6301f008-081d-4ad2-8425-32fc387bdaac" />
 
 Penjelasan:
 
-* Saya membuat instance Vue menggunakan createApp(). Data seperti skills dan certificates disimpan dalam bentuk array agar bisa ditampilkan secara otomatis ke dalam HTML.
+* Di bagian ini saya menggunakan query untuk mengambil data dari tabel certificates di database. Query ini berfungsi untuk mengambil semua data yang nantinya akan ditampilkan ke dalam halaman website. Dengan cara ini, data bisa dikelola langsung dari database tanpa perlu mengubah kode HTML.
 
 ---
 
-#### v-for dan Interpolasi
-<img width="480" height="36" alt="image" src="https://github.com/user-attachments/assets/1a41a2a5-46de-4f41-8275-bb1b0ee03b29" />
+#### Perulangan Data
 
-<img width="826" height="40" alt="image" src="https://github.com/user-attachments/assets/a9486f1c-c077-4b0a-9b1d-0eac339c2f2f" />
+<img width="435" height="28" alt="image" src="https://github.com/user-attachments/assets/a181a924-e2eb-4aa5-b800-7970789479c0" />
 
 Penjelasan:
 
-* Directive v-for digunakan untuk melakukan perulangan data. Interpolasi {{ }} digunakan untuk menampilkan nilai dari data Vue ke dalam HTML. Dengan cara ini, jika saya menambahkan data baru ke dalam array, tampilannya akan langsung bertambah tanpa perlu menulis ulang struktur HTML.
+* Saya menggunakan perulangan while untuk menampilkan data satu per satu dari database. Setiap data yang diambil akan dimasukkan ke dalam variabel, lalu ditampilkan ke dalam HTML. Dengan perulangan ini, jumlah data yang ditampilkan akan menyesuaikan isi database secara otomatis.
+
+---
+
+#### Menampilkan Data ke HTML
+
+<img width="611" height="88" alt="image" src="https://github.com/user-attachments/assets/44a91b91-3498-4393-99f5-06b9f48eeb35" />
+
+Penjelasan:
+
+* Pada bagian ini saya menampilkan data dari database ke dalam HTML menggunakan sintaks PHP <?= ?>. Data seperti gambar, judul, dan tahun diambil langsung dari database. Dengan cara ini, jika data di database berubah, maka tampilan di website juga akan ikut berubah secara otomatis.
+
+
