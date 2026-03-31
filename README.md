@@ -275,12 +275,13 @@ Penjelasan:
 
 ### > Kode Section Certificates
 
-<img width="842" height="703" alt="Screenshot 2026-02-28 234512" src="https://github.com/user-attachments/assets/c744cd10-0c21-46e5-93cd-614c9138f4f2" />
+<img width="584" height="897" alt="image" src="https://github.com/user-attachments/assets/cb9f7090-d71e-4077-8214-54c446fcb17e" />
+
 
 
 Penjelasan :
 
-* Pada bagian ini saya membuat section certificates untuk menampilkan daftar sertifikat yang pernah saya peroleh. Section ini dibuat terpisah agar lebih rapi dan mudah diakses melalui menu navigasi. Struktur layout menggunakan container dan sistem grid Bootstrap supaya tampilannya tetap teratur dan responsif. Setiap sertifikat ditampilkan menggunakan perulangan v-for dari Vue, sehingga data bisa ditambahkan langsung dari bagian JavaScript tanpa perlu menulis ulang kode HTML. Di dalam setiap item terdapat gambar sertifikat, tombol detail untuk melihat lebih detail isi dari sertifikat yang saya peroleh
+* Pada bagian ini saya membuat section Certificates untuk menampilkan data sertifikat secara dinamis dari database. Saya menggunakan PHP untuk mengambil data dengan perulangan while, sehingga setiap data sertifikat yang ada di database akan otomatis ditampilkan satu per satu ke dalam halaman. Di dalam setiap item, saya menampilkan gambar sertifikat, tahun, dan judul menggunakan sintaks PHP seperti <?= $cert['image']; ?>, sehingga datanya langsung terhubung dari database. Saya juga menambahkan tombol Detail yang terhubung ke modal Bootstrap, dimana setiap modal memiliki id yang berbeda menggunakan variabel $no, supaya ketika tombol diklik akan menampilkan detail sertifikat yang sesuai. Dengan cara ini, tampilan menjadi lebih interaktif dan data bisa dikelola langsung dari database tanpa perlu mengubah kode HTML.
 
 ---
 
