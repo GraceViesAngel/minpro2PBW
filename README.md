@@ -182,7 +182,10 @@ Penjelasan :
 
 ### > Kode Section About Me
 
-<img width="642" height="859" alt="image" src="https://github.com/user-attachments/assets/c5db681a-00b4-49ea-b7e9-f8c02feca58d" />
+<img width="767" height="800" alt="image" src="https://github.com/user-attachments/assets/6ecb8fe3-08c5-45bb-9754-0be6f1eeef0a" />
+
+<img width="770" height="681" alt="image" src="https://github.com/user-attachments/assets/e987c7ef-b665-4f0a-824b-d4c9d5febdb6" />
+
 
 Penjelasan :
 
